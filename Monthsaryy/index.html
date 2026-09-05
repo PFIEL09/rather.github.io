@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My Jaja</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="cursor-heart" id="cursorHeart">♡</div>
+  <div class="petal-layer" id="petalLayer"></div>
+
+  <div id="loginScreen" class="login-screen">
+
+    <div class="login-glow"></div>
+    <div class="login-card">
+      <div class="flower-badge">
+        <img src="photo/kiss.gif" alt="Flower">
+      </div>
+      <span class="eyebrow">
+        A little surprise for
+      </span>
+      <h1>
+        Jaja <span>♡</span>
+      </h1>
+      <p class="login-subtitle">
+        Only you can open this little love story.
+      </p>
+      <label class="field">
+        <span>👤</span>
+        <input
+          id="username"
+          type="text"
+          placeholder="Your name"
+          autocomplete="off"
+        >
+
+      </label>
+      <div class="pin-display" id="pinDisplay">
+
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+
+      </div>
+      <p class="pin-text">
+        Enter your 4-digit PIN
+      </p>
+
+      <div class="keypad">
+
+        <button onclick="enterPin('1')">1</button>
+        <button onclick="enterPin('2')">2</button>
+        <button onclick="enterPin('3')">3</button>
+        <button onclick="enterPin('4')">4</button>
+        <button onclick="enterPin('5')">5</button>
+        <button onclick="enterPin('6')">6</button>
+        <button onclick="enterPin('7')">7</button>
+        <button onclick="enterPin('8')">8</button>
+        <button onclick="enterPin('9')">9</button>
+        <span></span>
+        <button onclick="enterPin('0')">0</button>
+        <button class="delete-key"onclick="deletePin()">⌫
+        </button>
+
+      </div>
+
+      <button class="unlock-button"onclick="checkLogin()">Open My Gift 
+      </button>
+      <p
+        id="loginError"
+        class="login-error"
+      ></p>
+      <small>
+        Made with love ❤️
+      </small>
+    </div>
+  </div>
+
+  <main id="mainContent" class="hidden">
+
+<!-- Music Player -->
+<div class="music-player" id="musicPlayer">
+
+    <button
+        class="music-disc"
+        id="musicDisc"
+        aria-label="Play music"
+        type="button"
+    >
+        <img
+            src="photo/The Ridleys.png"
+            alt="Music cover"
+        >
+
+        <span class="music-icon">▶</span>
+    </button>
+
+    <audio id="bgMusic" loop>
+        <source
+            src="music/Be With You.mp3"
+            type="audio/mpeg"
+        >
+        Your browser does not support audio.
+    </audio>
+
+</div>
+
+<section class="hero">
+
+  <div class="hero-glow glow-1"></div>
+  <div class="hero-glow glow-2"></div>
+  <div class="hero-heart heart-1">♥</div>
+  <div class="hero-heart heart-2">♡</div>
+  <div class="hero-heart heart-3">♥</div>
+  <div class="hero-heart heart-4">♡</div>
+
+  <img
+    class="floating-flower flower-a"
+    src="photo/Flowerp.gif"
+    alt=""
+  >
+
+  <img
+    class="floating-flower flower-b"
+    src="photo/cat2.gif"
+    alt=""
+  >
+
+  <div class="hero-content reveal">
+
+    <span class="eyebrow">
+      ✿ A little something for you ✿
+    </span>
+
+    <h1>
+      Happy Monthsarry,
+      <br>
+      <em>My Babyyy</em>
+      <span>♥</span>
+    </h1>
+
+    <p>
+      Another month with you,
+      another collection of memories
+      I will always treasure.
+
+      Thank you for making
+      ordinary days feel special. ♡
+    </p>
+
+    <a
+      href="#message"
+      class="heart-button"
+    >
+      Open My Heart
+      <span>♡</span>
+    </a>
+
+    <div class="scroll-hint">
+      scroll gently ↓
+    </div>
+
+  </div>
+
+  <div class="hero-orbit">
+    ♥
+  </div>
+
+</section>
+
+    <section
+      class="section message-section"
+      id="message"
+    >
+
+      <div class="section-title reveal">
+
+        <span>A message from me</span>
+        <h2>For You, My Love</h2>
+
+      </div>
+
+
+      <div class="love-message reveal">
+
+        <div class="big-heart"id="bigHeart">❤️</div>
+        <div>
+
+          <p>
+            I don’t know how many years, months, or little moments life still has waiting for us, but there’s one thing I’m sure of I want to spend them all with you.
+          </p>
+
+          <p>
+           I know our day isn’t always perfect. There will be days when we disagree, misunderstand each other, or simply have a hard time. But through all of it, I’m grateful that we have each other. Thank you for staying beside me, for understanding me, for making me laugh, and for choosing us even on the difficult days.  
+          </p>
+
+          <p>
+            I want us to keep growing together, building our dreams, making memories, and finding happiness in the little things. I want more ordinary mornings, late-night conversations, silly moments, and quiet days with you.
+          </p>
+
+          <p>
+           You’re not just my babyy you’re my partner, my home, and the person I want beside me through every chapter of our lives.
+          </p>
+
+          <p>
+           No matter how many years pass, I hope you always remember this: I would still choose you, again and again.
+
+          <p>
+            <strong>
+              Happy Monthsarry, My wifey. ❤️
+            </strong>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section memories">
+      <div class="section-title reveal">
+
+        <span>
+          Our little memories
+        </span>
+
+        <h2>
+          Moments I Treasure 
+        </h2>
+
+      </div>
+      <div class="memory-grid">
+
+        <article class="memory-card reveal">
+          <div class="photo-wrap">
+            <img src="photo/1st.png"alt="Our memory">
+
+          </div>
+
+          <h3>Our First Moments</h3>
+
+          <p>The beginning of something
+             that became so special.
+          </p>
+
+        </article>
+
+
+        <article class="memory-card reveal">
+
+          <div class="photo-wrap">
+
+            <img
+              src="photo/2nd.png"
+              alt="Our memory"
+            >
+
+          </div>
+
+          <h3>
+            Happy Days
+          </h3>
+
+          <p>
+            Every simple moment becomes
+            memorable when I'm with you.
+          </p>
+
+        </article>
+
+
+        <article class="memory-card reveal">
+
+          <div class="photo-wrap">
+
+            <img
+              src="photo/3rd.png"
+              alt="Our memory"
+            >
+
+          </div>
+
+          <h3>
+            Always Us
+          </h3>
+
+          <p>
+            No matter where life takes us,
+            I hope it is always us.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <section class="section reasons">
+
+      <div class="section-title reveal">
+
+        <span>
+          There are so many
+        </span>
+
+        <h2>
+          Reasons Why I Love You 
+        </h2>
+
+      </div>
+
+
+      <div class="reason-grid">
+
+
+        <article class="reason-card reveal">
+
+          <div class="icon">
+            
+          </div>
+
+          <h3>
+            Your Smile
+          </h3>
+
+          <p>
+            Your smile can instantly
+            make my day better.
+          </p>
+
+        </article>
+
+
+        <article class="reason-card reveal">
+
+          <div class="icon">
+            
+          </div>
+
+          <h3>
+            Your Heart
+          </h3>
+
+          <p>
+            I love how caring
+            and genuine you are.
+          </p>
+
+        </article>
+
+
+        <article class="reason-card reveal">
+
+          <div class="icon">
+            
+          </div>
+
+          <h3>
+            Your Humor
+          </h3>
+
+          <p>
+            Somehow you always know
+            how to make me laugh.
+          </p>
+
+        </article>
+
+
+        <article class="reason-card reveal">
+
+          <div class="icon">
+            
+          </div>
+
+          <h3>
+            Your Comfort
+          </h3>
+
+          <p>
+            Being with you feels
+            like being somewhere safe.
+          </p>
+
+        </article>
+
+
+        <article class="reason-card reveal">
+
+          <div class="icon">
+            
+          </div>
+
+          <h3>
+            Your Kindness
+          </h3>
+
+          <p>
+            The little things you do
+            mean more than you realize.
+          </p>
+
+        </article>
+
+
+        <article class="reason-card reveal">
+
+          <div class="icon">
+            
+          </div>
+
+          <h3>
+            Because You're You
+          </h3>
+
+          <p>
+            I don't need another reason.
+            I simply love you.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <section class="section counter-section">
+
+      <div class="section-title reveal">
+
+        <span>
+          And the time keeps going
+        </span>
+
+        <h2>
+          We've Been Together For.....
+        </h2>
+
+      </div>
+
+
+      <div class="counter-box reveal">
+
+        <div class="time-box">
+
+          <strong id="days">
+            0
+          </strong>
+
+          <span>
+            Days
+          </span>
+
+        </div>
+
+
+        <div class="time-box">
+
+          <strong id="hours">
+            0
+          </strong>
+
+          <span>
+            Hours
+          </span>
+
+        </div>
+
+
+        <div class="time-box">
+
+          <strong id="minutes">
+            0
+          </strong>
+
+          <span>
+            Minutes
+          </span>
+
+        </div>
+
+
+        <div class="time-box">
+
+          <strong id="seconds">
+            0
+          </strong>
+
+          <span>
+            Seconds
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section letter-section">
+
+      <div class="section-title reveal">
+
+        <span>
+          I wrote something for you
+        </span>
+
+        <h2>
+          You've Got A Letter!!!
+        </h2>
+
+      </div>
+
+<div class="envelope-wrapper">
+    <div class="envelope" id="envelope">
+
+        <div class="envelope-letter">
+            <div class="letter-paper">
+                <div class="letter-heart"></div>
+                <h3>For My wife/babyy</h3>
+                <p>With all my love ❤️</p>
+            </div>
+        </div>
+
+
+        <div class="envelope-back"></div>
+        <div class="envelope-front"></div>
+        <div class="envelope-flap"></div>
+        <div class="envelope-seal">♥</div>
+
+    </div>
+</div>
+
+
+</div>
+
+        <div
+          class="letter"
+          id="letter"
+        >
+
+          <h3>
+            Dear My Babyyy,
+          </h3>
+
+          <p>
+            Sometimes I wonder if I tell you
+            enough how important you are to me.
+          </p>
+
+          <p>
+            You came into my life and somehow
+            made things brighter.
+            You became someone I can laugh with,
+            talk to, annoy, miss, and love.
+          </p>
+
+          <p>
+            I appreciate every conversation,
+            every laugh, every random moment,
+            and even the moments when things
+            aren't perfect.
+          </p>
+
+          <p>
+            I don't expect everything to always
+            be perfect.
+
+            What matters to me is that we
+            continue choosing each other.
+          </p>
+
+          <p>
+            So on this monthsarry,
+            I just want to say:
+
+            thank you for being you.
+          </p>
+
+          <p>
+            <strong>
+              I love you more than these little
+              words can explain. ❤️
+            </strong>
+          </p>
+
+          <p class="signature">
+
+            Always yours,
+
+            <br>
+
+            Your Future Husband ❤️
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section surprise-section">
+      <div class="section-title reveal">
+
+        <span>
+          One last thing...
+        </span>
+
+        <h2>
+          I Have A Surprise For You 
+        </h2>
+
+      </div>
+
+
+      <p class="reveal">
+        Click the gift.
+        Don't be shy. 
+      </p>
+
+
+      <button
+        class="gift reveal"
+        id="gift"
+        aria-label="Open surprise"
+      >
+
+        <span class="gift-lid"></span>
+
+        <span class="gift-ribbon"></span>
+
+        <span class="gift-box"></span>
+
+      </button>
+
+
+      <div
+        class="surprise-message"
+        id="surpriseMessage"
+      >
+
+        <div class="sparkle">
+          ✦
+        </div>
+
+        <h2>
+          I Love You! ❤️
+        </h2>
+
+        <p>
+          If I could give you one thing
+          in this world, I would give you
+          the ability to see yourself
+          through my eyes.
+        </p>
+
+        <p>
+          Then you would finally understand
+          just how special you really are to me.
+        </p>
+
+        <p>
+          Here's to more months,
+          more memories, more laughter,
+          more adventures, and more "us."
+        </p>
+
+        <strong>
+          Happy Monthsarry, my love. 💕
+        </strong>
+
+      </div>
+
+    </section>
+
+    <footer>
+
+      <div class="footer-flower">
+        🌸
+      </div>
+
+      <div class="heart">
+        ❤️
+      </div>
+
+      <p>
+        Made with love, especially for you.
+      </p>
+
+      <small>
+        Forever isn't long enough with you.
+      </small>
+      <small>
+        made by RATHER/ur HUSBAND
+      </small>
+    </footer>
+
+  </main>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
